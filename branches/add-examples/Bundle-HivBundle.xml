@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="HivBundle"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="Patient/Id"/>
+    <resource>
+      <Patient>
+        <id value="HIVPatientExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/customig/StructureDefinition/hiv-patient"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="HIVPatientExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;HIVPatientExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient.html">hiv-patient</a></p></div><p><b>Client Key Population Extension</b>: Intravenous drug user <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#SCT#228388006)</span></p><p><b>identifier</b>: Patient folder number: M001, id: N001</p><p><b>name</b>: Nour Boug </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2000-04-21</p><p><b>maritalStatus</b>: Married <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus</a>#M)</span></p><p><b>managingOrganization</b>: <a href="Organization/example">Organization/example</a></p></div>
+        </text>
+        <extension url="http://openhie.org/fhir/customig/StructureDefinition/client-key-population-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="SCT#228388006"/>
+              <display value="Intravenous drug user"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+            <text value="Patient folder number"/>
+          </type>
+          <system value="http://openhie.org/fhir/training-solution-1/identifier/nid"/>
+          <value value="M001"/>
+        </identifier>
+        <identifier>
+          <system value="http://openhie.org/fhir/training-solution-1/identifier/nid"/>
+          <value value="N001"/>
+        </identifier>
+        <name>
+          <family value="Boug"/>
+          <given value="Nour"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="2000-04-21"/>
+        <maritalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+          </coding>
+        </maritalStatus>
+        <managingOrganization>
+          <reference value="Organization/example"/>
+        </managingOrganization>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/Id"/>
+    </request>
+  </entry>
+</Bundle>

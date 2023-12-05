@@ -1,0 +1,24 @@
+﻿/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 43, col 14, Error - None of the codings provided are in the value set 'Client Key Population Values' (http://openhie.org/fhir/customig/ValueSet/client-key-population-values|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#SCT#228388006) (CODEINVALID)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 45, col 18, Error - Unable to find code SCT#228388006 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code 'SCT#228388006' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#SCT#228388006' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#SCT#228388006' (CODEINVALID)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 72, col 10, Error - Unable to resolve resource with reference 'Organization/example' (STRUCTURE)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 21, col 12, Error - Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR (INVALID)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 35, col 12, Error - Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR (INVALID)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 12, col 8, Error - Patient.identifier:NID: max allowed = 1, but found 2 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0) (STRUCTURE)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 12, col 8, Error - Patient.identifier:MR: minimum required = 1, but only found 0 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0) (STRUCTURE)
+/github/workspace/fsh-generated/resources/Bundle-HivBundle.json: line 6, col 6, Error - The fullUrl must be an absolute URL (not 'Patient/Id') (INVALID)
+/github/workspace/fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig.json: line 1, col 11505, Warning - value should not start or finish with whitespace ' This is an extension of the Client Key Population Extension' (INVALID)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 10, col 6, Error - Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR (INVALID)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 24, col 6, Error - Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR (INVALID)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 1, col 2, Error - Patient.identifier:NID: max allowed = 1, but found 2 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0) (STRUCTURE)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 1, col 2, Error - Patient.identifier:MR: minimum required = 1, but only found 0 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0) (STRUCTURE)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 32, col 8, Error - None of the codings provided are in the value set 'Client Key Population Values' (http://openhie.org/fhir/customig/ValueSet/client-key-population-values|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#SCT#228388006) (CODEINVALID)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 34, col 12, Error - Unable to find code SCT#228388006 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code 'SCT#228388006' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#SCT#228388006' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#SCT#228388006' (CODEINVALID)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 61, col 4, Error - Unable to resolve resource with reference 'Organization/example' (STRUCTURE)
+/github/workspace/fsh-generated/resources/StructureDefinition-UniquePatientProfile.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+
+ExampleIG : Validation Results
+=========================================
+
+err = 15, warn = 6, info = 0
+IG Publisher Version: 1.5.5
+Generated Mon Dec 04 17:40:54 UTC 2023. FHIR version 4.0.1 for my-custom-fhir-ig#1.0.0 (canonical = http://openhie.org/fhir/customig)

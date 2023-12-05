@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://openhie.org/fhir/customig/CodeSystem/client-key-population,1.0.0,active,,ClientKeyPopulation,Client Key Population,"This extension describes the client key population",

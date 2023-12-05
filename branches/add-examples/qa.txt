@@ -1,0 +1,49 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 15, warn = 6, info = 0
+IG Publisher Version: 1.5.5
+Generated Mon Dec 04 17:40:54 UTC 2023. FHIR version 4.0.1 for my-custom-fhir-ig#1.0.0 (canonical = http://openhie.org/fhir/customig)
+ Build Errors : 1 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-HivBundle : 8 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-client-key-population : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 7 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-UniquePatientProfile : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-client-key-population-extension : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-client-key-population-values : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/Patient-HIVPatientExample.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 214, column 699: The link 'Organization/example' for "Organization/example" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-HivBundle.json ==
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Client Key Population Values' (http://openhie.org/fhir/customig/ValueSet/client-key-population-values|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#SCT#228388006)
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/.extension[0].value.ofType(CodeableConcept).coding[0]: Unable to find code SCT#228388006 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code 'SCT#228388006' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#SCT#228388006' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#SCT#228388006'
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/.managingOrganization: Unable to resolve resource with reference 'Organization/example'
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/.identifier[0]: Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/.identifier[1]: Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/: Patient.identifier:NID: max allowed = 1, but found 2 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0)
+ERROR: Bundle/HivBundle: Bundle.entry[0].resource/*Patient/HIVPatientExample*/: Patient.identifier:MR: minimum required = 1, but only found 0 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0)
+ERROR: Bundle/HivBundle: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Patient/Id')
+== fsh-generated/resources/CodeSystem-client-key-population.json ==
+== fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig.json ==
+WARNING: ImplementationGuide/my-custom-fhir-ig: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace ' This is an extension of the Client Key Population Extension'
+== fsh-generated/resources/Patient-HIVPatientExample.json ==
+ERROR: Patient/HIVPatientExample: Patient.identifier[0]: Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR
+ERROR: Patient/HIVPatientExample: Patient.identifier[1]: Profile http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0, Element matches more than one slice - NID, MR
+ERROR: Patient/HIVPatientExample: Patient: Patient.identifier:NID: max allowed = 1, but found 2 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0)
+ERROR: Patient/HIVPatientExample: Patient: Patient.identifier:MR: minimum required = 1, but only found 0 (from http://openhie.org/fhir/customig/StructureDefinition/hiv-patient|1.0.0)
+ERROR: Patient/HIVPatientExample: Patient.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Client Key Population Values' (http://openhie.org/fhir/customig/ValueSet/client-key-population-values|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#SCT#228388006)
+ERROR: Patient/HIVPatientExample: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: Unable to find code SCT#228388006 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code 'SCT#228388006' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#SCT#228388006' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#SCT#228388006'
+ERROR: Patient/HIVPatientExample: Patient.managingOrganization: Unable to resolve resource with reference 'Organization/example'
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-UniquePatientProfile.json ==
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/customig/StructureDefinition/UniquePatientProfile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-client-key-population-extension.json ==
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+== fsh-generated/resources/ValueSet-client-key-population-values.json ==

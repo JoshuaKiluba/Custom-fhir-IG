@@ -1,0 +1,354 @@
+{
+  "date" : "Tue, 05 Dec, 2023 17:52:16 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig.json",
+      "size" : 3601,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 41,
+          "length" : 58
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 94
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 708
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 108
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 123
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 60,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-client-key-population.json",
+      "size" : 503,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 41,
+          "length" : 39
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 143
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 1323
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-OrganizationExample.json",
+      "size" : 432,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 9
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 56,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-HIVPatientExample.json",
+      "size" : 1431,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 9
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 299
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 157
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 912,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 8
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 243
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-client-key-population-extension.json",
+      "size" : 1827,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 41,
+          "length" : 22
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 48
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 183
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 110
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 533
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 60,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-hiv-patient.json",
+      "size" : 7368,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 23
+        },
+        {
+          "activity" : "load",
+          "start" : 41,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 397
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 349
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 769
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 800
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 1964
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 60,
+          "length" : 23
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-client-key-population-values.json",
+      "size" : 1120,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 41,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 126
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 107
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 4348
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 60,
+          "length" : 3
+        }
+      ]
+    }
+  ]
+}

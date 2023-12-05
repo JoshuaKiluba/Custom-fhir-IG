@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://openhie.org/fhir/customig/CodeSystem/client-key-population",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ClientKeyPopulation",
+      "title" : "Client Key Population",
+      "description" : "This extension describes the client key population"
+    }
+  ]
+}

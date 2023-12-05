@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "client-key-population",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://openhie.org/fhir/customig/CodeSystem/client-key-population</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">General-Population<a name=\"client-key-population-General-Population\"> </a></td><td>General Population</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/customig/CodeSystem/client-key-population",
+  "version" : "1.0.0",
+  "name" : "ClientKeyPopulation",
+  "title" : "Client Key Population",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-04T17:40:27+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "name" : "Jembi Health Systems",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  },
+  {
+    "name" : "Joshua Kiluba",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "joshua@symbionix.co",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This extension describes the client key population",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "General-Population",
+    "display" : "General Population"
+  }]
+}

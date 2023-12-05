@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Patient",
+  "id" : "HIVPatientExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/customig/StructureDefinition/hiv-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Nour Boug </b> female, DoB: 2000-04-21 ( Patient folder number:\u00a0M001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id:\u00a0N001</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization/example\">Organization/example</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\" This is an extension of the Client Key Population Extension\"><a href=\"StructureDefinition-client-key-population-extension.html\">Client Key Population Extension:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://snomed.info/sct SCT#228388006}\">Intravenous drug user</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://openhie.org/fhir/customig/StructureDefinition/client-key-population-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "SCT#228388006",
+        "display" : "Intravenous drug user"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical record number"
+      }],
+      "text" : "Patient folder number"
+    },
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/nid",
+    "value" : "M001"
+  },
+  {
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/nid",
+    "value" : "N001"
+  }],
+  "name" : [{
+    "family" : "Boug",
+    "given" : ["Nour"]
+  }],
+  "gender" : "female",
+  "birthDate" : "2000-04-21",
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M"
+    }]
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/example"
+  }
+}

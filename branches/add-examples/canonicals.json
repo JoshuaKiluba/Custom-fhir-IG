@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "client-key-population",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/customig/CodeSystem/client-key-population",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulation"
+  },
+  {
+    "id" : "my-custom-fhir-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/customig/ImplementationGuide/my-custom-fhir-ig",
+    "version" : "1.0.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "UniquePatientProfile",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/customig/StructureDefinition/UniquePatientProfile",
+    "version" : "1.0.0",
+    "name" : "UniquePatientProfile"
+  },
+  {
+    "id" : "client-key-population-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/customig/StructureDefinition/client-key-population-extension",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationExtension"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/customig/StructureDefinition/hiv-patient",
+    "version" : "1.0.0",
+    "name" : "HivPatient"
+  },
+  {
+    "id" : "client-key-population-values",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/customig/ValueSet/client-key-population-values",
+    "version" : "1.0.0",
+    "name" : "ClientKeyPopulationValues"
+  }
+]

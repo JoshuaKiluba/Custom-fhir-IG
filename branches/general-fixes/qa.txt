@@ -1,0 +1,25 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 0
+IG Publisher Version: 1.5.5 Out of date - current version is ?pub-ver-1?
+Generated Tue Dec 05 17:48:45 UTC 2023. FHIR version 4.0.1 for my-custom-fhir-ig#1.0.0 (canonical = http://openhie.org/fhir/customig)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-client-key-population : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-OrganizationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-client-key-population-extension : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-client-key-population-values : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/CodeSystem-client-key-population.json ==
+== fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig.json ==
+== fsh-generated/resources/Organization-OrganizationExample.json ==
+== fsh-generated/resources/Patient-HIVPatientExample.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-client-key-population-extension.json ==
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+== fsh-generated/resources/ValueSet-client-key-population-values.json ==

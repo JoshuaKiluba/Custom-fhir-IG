@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/customig/Patient/HIVPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/customig/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/customig/StructureDefinition/hiv-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Nour Boug </b> female, DoB: 2000-04-21 ( Patient folder number: M001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id: N001</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-OrganizationExample.html\">Organization/OrganizationExample</a> &quot;Org 1&quot;</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension of the Client Key Population Extension\"><a href=\"StructureDefinition-client-key-population-extension.html\">Client Key Population Extension:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://snomed.info/sct 228388006}\">Intravenous drug user</span></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://openhie.org/fhir/customig/StructureDefinition/client-key-population-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:228388006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "228388006" ] ;
+         fhir:display [ fhir:v "Intravenous drug user" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical record number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Patient folder number" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/mr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "M001" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/nid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "N001" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Boug" ] ;
+     fhir:given ( [ fhir:v "Nour" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2000-04-21"^^xsd:date] ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://openhie.org/fhir/customig/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

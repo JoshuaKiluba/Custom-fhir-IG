@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-my-custom-fhir-ig.json	3601	-	0	0	0	0	0	0	4	94	0	0	0	0	0	0	0	1	0	0	108	123	0	0	0	3	0	1
+fsh-generated/resources/CodeSystem-client-key-population.json	503	9	0	0	0	0	0	0	0	20	0	0	1	0	0	0	0	0	0	0	14	1323	0	0	0	0	0	0
+fsh-generated/resources/Organization-OrganizationExample.json	432	8	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	8	9	0	1	0	0	0	0
+fsh-generated/resources/Patient-HIVPatientExample.json	1431	9	0	0	0	0	0	0	1	299	0	0	0	0	0	0	0	0	0	0	16	13	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	912	8	1	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	11	9	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-client-key-population-extension.json	1827	12	0	0	0	0	0	48	0	61	0	0	0	0	0	0	0	0	0	0	110	533	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-hiv-patient.json	7368	23	0	0	0	0	0	397	0	349	0	0	0	0	0	0	0	3	0	0	800	1964	0	0	0	23	0	3
+fsh-generated/resources/ValueSet-client-key-population-values.json	1120	10	0	0	0	0	0	0	0	126	0	0	0	0	0	0	0	0	0	0	17	4348	0	0	0	3	0	0
